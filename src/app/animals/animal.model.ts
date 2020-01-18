@@ -1,6 +1,4 @@
-import { Voice } from './voice.interface';
-
-export abstract class Animal implements Voice {
+export abstract class Animal {
   constructor(public animalType: string,
               public legs: number) {
   }

@@ -11,3 +11,7 @@
 <p>Czy przysługuje zniżka ? {{car1.discountAvailable}}</p>
 <p>{{car1.discountPercent}} % zniżki</p>
 
+
+<div *ngFor="let animal of animals">
+  {{animal.say()}}
+</div>

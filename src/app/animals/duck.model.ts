@@ -1,8 +1,9 @@
 import { Animal } from './animal.model';
+import { Voice } from './voice.interface';
 
-export class Duck extends Animal {
+export class Duck extends Animal implements Voice{
 
-  constructor(protected animalType: string, protected legs: number) {
+  constructor(animalType: string, legs: number) {
     super(animalType, legs)
   }
 
